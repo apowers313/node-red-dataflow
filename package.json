@@ -1,0 +1,31 @@
+{
+  "name": "@apowers313/node-red-dataflow",
+  "version": "1.0.0",
+  "description": "Streaming data framework for Node-RED",
+  "node-red": {
+    "nodes": {
+      "dataflow-source": "dataflow-source/dataflow-source.js",
+      "dataflow-sink": "dataflow-sink/dataflow-sink.js"
+    }
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "author": "Adam Powers <apowers@ato.ms>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint-plugin-jsdoc": "^30.7.13",
+    "eslint-plugin-mocha": "^8.2.0",
+    "eslint-plugin-old-c-programmer": "^1.0.1",
+    "mocha": "^10.0.0",
+    "node-red": "^2.2.2",
+    "node-red-node-test-helper": "^0.2.7"
+  },
+  "dependencies": {
+    "dataflow-core": "file:../dataflow"
+  }
+}

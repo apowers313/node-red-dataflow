@@ -1,0 +1,30 @@
+<!-- Declaration -->
+<script type="text/javascript">
+    RED.nodes.registerType("dataflow-sink", {
+        category: "dataflow",
+        defaults: {
+            name: {value:""}
+        },
+        inputs: 1,
+        outputs: 1,
+        color: "#4be358",
+        icon: "db.svg",
+        paletteLabel: "sink",
+        label: function() {
+            return this.name||"dataflow-sink";
+        }
+    });
+</script>
+
+<!-- Editor Layout -->
+<script type="text/html" data-template-name="dataflow-sink">
+    <div class="form-row">
+        <label for="node-dataflow-sink"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-dataflow-sink" placehoder="Name">
+    </div>
+</script>
+
+<!-- Help Text -->
+<script type="text/html" data-help-name="dataflow-sink">
+    <p>An output for data</p>
+</script>

@@ -1,0 +1,30 @@
+<!-- Declaration -->
+<script type="text/javascript">
+    RED.nodes.registerType("dataflow-source", {
+        category: "dataflow",
+        defaults: {
+            name: {value:""}
+        },
+        inputs: 1,
+        outputs: 1,
+        color: "#4be358",
+        icon: "db.svg",
+        paletteLabel: "source",
+        label: function() {
+            return this.name||"dataflow-source";
+        }
+    });
+</script>
+
+<!-- Editor Layout -->
+<script type="text/html" data-template-name="dataflow-source">
+    <div class="form-row">
+        <label for="node-dataflow-source"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-dataflow-source" placehoder="Name">
+    </div>
+</script>
+
+<!-- Help Text -->
+<script type="text/html" data-help-name="dataflow-source">
+    <p>An input for data</p>
+</script>
